@@ -7,12 +7,15 @@ import SimpleForm from "./Components/SimpleForm/SimpleForm";
 
 
 const App = () => {
-//   const handleSignUpSubmit = data =>{
-//  console.log('sign up data',data)
-//   }
-//   const handleUpdateProfile = data=>{
-//  console.log('update profile',data)
-//   }
+  const handleSignUpSubmit = data =>{
+ console.log('sign up data',data)
+  }
+  const handleUpdateProfile = data=>{
+ console.log('update profile',data)
+  }
+
+
+
   return (
     <div className=" text-center">
       <h1>Form master</h1>
@@ -20,6 +23,33 @@ const App = () => {
       {/* <SetFullForm></SetFullForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
+
+
+{/* <ReUsableform 
+formTitle={"sign up "}
+handleSubmitbtn={handleSignUpSubmit}>
+
+  </ReUsableform>
+
+<ReUsableform 
+formTitle={"profile update"}
+submitBtn={"update"} 
+handleSubmitbtn={handleUpdateProfile}></ReUsableform> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* <ReUsableform 
       formTitle={'sign up'} 
       formSubmit={handleSignUpSubmit}>

@@ -5,13 +5,16 @@ import Uncle from "../Uncle/Uncle";
 import './Grandpa.css'
 export const MoneyContext =createContext(1000);
  export const AssetsContext = createContext("gold");
+
+ export const DollarContext = createContext("five dollar")
 const Grandpa = () => {
     const [money,setMoney]= useState(1000)
     const assets = 'diamond';
     return (
         <div className="grandpa  justify-center">
            <h3 className=" text-center">Grandpa</h3>
-       <MoneyContext.Provider value={[money,setMoney]}>
+      <DollarContext.Provider value="five dollar">
+      <MoneyContext.Provider value={[money,setMoney]}>
        <AssetsContext.Provider value="gold">
          <section className=" flex justify-center ">
 <Dad assets={assets}></Dad>
@@ -20,6 +23,10 @@ const Grandpa = () => {
             </section>
          </AssetsContext.Provider>
        </MoneyContext.Provider>
+
+
+
+      </DollarContext.Provider>
         </div>
     );
 };
